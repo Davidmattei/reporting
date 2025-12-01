@@ -14,7 +14,7 @@ class Version
     private ?int $id = null;
 
     #[ORM\Column(length: 11)]
-    private ?string $number = null;
+    private string $number;
 
     public function getId(): ?int
     {
