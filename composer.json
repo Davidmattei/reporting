@@ -9,14 +9,16 @@
         "ext-iconv": "*",
         "symfony/console": "7.4.*",
         "symfony/dotenv": "7.4.*",
-        "symfony/flex": "^2",
+        "symfony/flex": "^2.10",
         "symfony/framework-bundle": "7.4.*",
         "symfony/runtime": "7.4.*",
+        "symfony/twig-bundle": "7.4.*",
         "symfony/yaml": "7.4.*"
     },
     "config": {
         "allow-plugins": {
             "php-http/discovery": true,
+            "phpstan/extension-installer": true,
             "symfony/flex": true,
             "symfony/runtime": true
         },
@@ -67,8 +69,11 @@
         }
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^3.91",
+        "friendsofphp/php-cs-fixer": "^3.91.1",
+        "phpstan/extension-installer": "^1.4.3",
         "phpstan/phpstan": "^2.1.32",
-        "phpstan/phpstan-symfony": "^2.0.9"
+        "phpstan/phpstan-deprecation-rules": "^2.0.3",
+        "phpstan/phpstan-symfony": "^2.0.9",
+        "symfony/maker-bundle": "^1.65"
     }
 }
