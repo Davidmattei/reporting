@@ -1,0 +1,18 @@
+includes:
+    - vendor/phpstan/phpstan-symfony/extension.neon
+    - vendor/phpstan/phpstan-symfony/rules.neon
+
+parameters:
+    tmpDir: %currentWorkingDirectory%/.cache/phpstan
+    treatPhpDocTypesAsCertain: false
+    paths:
+        - %currentWorkingDirectory%/bin
+        - %currentWorkingDirectory%/config
+        - %currentWorkingDirectory%/src
+    excludePaths:
+        - %currentWorkingDirectory%/vendor
+    scanDirectories:
+        - var/cache/dev/Symfony/Config
+    level: max
+    parallel:
+        maximumNumberOfProcesses: 2
