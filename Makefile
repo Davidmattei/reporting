@@ -17,3 +17,10 @@ stop: ## stop symfony server
 	symfony server:stop
 logs: ## logs symfony server
 	symfony server:log
+
+## —— Database —————————————————————————————————————————————————————————————————————————————————————————————————————————
+db-up: ## update database
+	php bin/console doctrine:schema:update --force
+db-refresh: ## drop and create database
+	php bin/console doctrine:database:drop --force
+	php bin/console doctrine:schema:update --force
